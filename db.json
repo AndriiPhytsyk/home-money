@@ -5,6 +5,24 @@
       "email": "wfm@mail.ru",
       "password": "12345678",
       "name": "Администратор"
+    },
+    {
+      "email": "phytsyk@gmail.com",
+      "password": "12345678",
+      "name": "Андрій Фицик",
+      "id": 2
+    },
+    {
+      "email": "phytsyk2@gmail.com",
+      "password": "12345678",
+      "name": "Андрій Фицик",
+      "id": 3
+    },
+    {
+      "email": "phytsyk3@gmail.com",
+      "password": "12345678",
+      "name": "Андрій Фицик",
+      "id": 4
     }
   ],
   "bill": {
