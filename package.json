@@ -1,17 +1,22 @@
 {
+  "engines": {
+    "node": "6.11.0",
+    "npm": "3.10.10"
+  },
   "name": "home-money",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build --prod",
     "test": "ng test",
     "build-prod": "ng build --prod",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "server": "json-server --watch db.json --port 3000",
-    "dev": "concurrently --kill-others \"npm run start\" \"npm run server\""
+    "dev": "concurrently --kill-others \"npm run start\" \"npm run server\"",
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
@@ -27,8 +32,11 @@
     "@swimlane/ngx-charts": "^7.4.0",
     "core-js": "^2.4.1",
     "d3": "^5.1.0",
+    "express": "^4.16.3",
     "moment": "^2.22.1",
+    "path": "^0.12.7",
     "rxjs": "^5.5.6",
+    "typescript": "~2.5.3",
     "webpack-dev-server": "^3.1.4",
     "zone.js": "^0.8.19"
   },
@@ -41,6 +49,7 @@
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
     "concurrently": "^3.5.1",
+    "enhanced-resolve": "^3.3.0",
     "eslint": "^4.19.1",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
