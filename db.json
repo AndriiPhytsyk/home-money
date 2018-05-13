@@ -23,6 +23,24 @@
       "password": "12345678",
       "name": "Андрій Фицик",
       "id": 4
+    },
+    {
+      "email": "phytsyk4@gmail.com",
+      "password": "12345678",
+      "name": "Андрій Фицик",
+      "id": 5
+    },
+    {
+      "email": "wfm2@mail.ru",
+      "password": "12345678",
+      "name": "John",
+      "id": 6
+    },
+    {
+      "email": "wfm3@mail.ru",
+      "password": "12345678",
+      "name": "Andrew",
+      "id": 7
     }
   ],
   "bill": {
