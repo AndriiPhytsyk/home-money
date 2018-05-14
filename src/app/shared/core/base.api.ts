@@ -7,7 +7,7 @@ export class BaseApi {
 
   constructor(public http: Http){}
 
-  base = 'http://localhost:3000/';
+  base = 'https://home-money-db.herokuapp.com/';
 
   getUrl(url: string) {
     return this.base + url;
