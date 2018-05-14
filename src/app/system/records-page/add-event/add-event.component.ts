@@ -50,7 +50,7 @@ export class AddEventComponent implements OnInit, OnDestroy {
       .subscribe(bill => {
           if (type === 'outcome') {
             if (bill.value < amount) {
-              this.showMessage(`Недостаточно средств! Вам не хватает ${amount - bill.value}`);
+              this.showMessage(`Недостатньо коштів! Вам не вистачає ${amount - bill.value}`);
               return;
             } else {
               value = bill.value - amount;
@@ -64,7 +64,7 @@ export class AddEventComponent implements OnInit, OnDestroy {
             .subscribe(() => {
               form.setValue({
                 amount: 0,
-                description: '',
+                description: ' ',
                 category: 1,
                 type: 'outcome'
               });

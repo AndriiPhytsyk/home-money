@@ -44,7 +44,7 @@
     }
   ],
   "bill": {
-    "value": 93400,
+    "value": 82400,
     "currency": "RUB"
   },
   "categories": [
@@ -152,6 +152,22 @@
       "date": "10.05.2018 10:31:50",
       "description": "Купив тюль",
       "id": 11
+    },
+    {
+      "type": "outcome",
+      "amount": 1000,
+      "category": 1,
+      "date": "14.05.2018 19:13:34",
+      "description": "Купив ровер",
+      "id": 12
+    },
+    {
+      "type": "outcome",
+      "amount": 10000,
+      "category": 1,
+      "date": "14.05.2018 19:16:13",
+      "description": "Купив пса",
+      "id": 13
     }
   ]
 }
