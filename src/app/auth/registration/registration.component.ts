@@ -13,7 +13,7 @@ import {Title} from '@angular/platform-browser';
 export class RegistrationComponent implements OnInit {
 
   constructor(private router: Router, private usersService: UsersService, private title: Title ) {
-    title.setTitle('Регистрания');
+    title.setTitle('Реєстрація');
   }
 
   form: FormGroup;
