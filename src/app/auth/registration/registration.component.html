@@ -1,4 +1,4 @@
-<p class="text-xs-center">Регистрация для получения доступа</p>
+<p class="text-xs-center">Регістрація для получення доступу</p>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
   <div class="form-group" [ngClass]="{'has-error': form.get('email').invalid && form.get('email').touched }">
     <label for="email">Email</label>
@@ -13,9 +13,9 @@
       class="form-help-text"
       *ngIf="form.get('email').invalid && form.get('email').touched"
     >
-      <span *ngIf="form.get('email')['errors']['required']">Email не должен быть пустым.</span>
-      <span *ngIf="form.get('email')['errors']['email']">Некоректный email.</span>
-      <span *ngIf="form.get('email')['errors']['existedEmail']">Такой email уже существует</span>
+      <span *ngIf="form.get('email')['errors']['required']">Email повинен бути порожнім.</span>
+      <span *ngIf="form.get('email')['errors']['email']">Некоректний email.</span>
+      <span *ngIf="form.get('email')['errors']['existedEmail']">Такой email уже існує.</span>
       <span></span>
     </span>
   </div>
@@ -33,7 +33,7 @@
       class="form-help-text"
       *ngIf="form.get('password').invalid && form.get('password').touched"
     >
-      <span *ngIf="form.get('password')['errors']['required']">Пароль не должен быть пустым.</span>
+      <span *ngIf="form.get('password')['errors']['required']">Пароль може бути порожнім.</span>
       <span *ngIf="form.get('password')['errors']['minlength']">
         Пароль должен состоят из минимум
         {{form.get('password')['errors']['minlength']['requiredLength'] }}
@@ -53,7 +53,7 @@
       class="form-help-text"
       *ngIf="form.get('name').invalid && form.get('name').touched"
     >
-      <span *ngIf="form.get('name')['errors']['required']">Заполните поле</span>
+      <span *ngIf="form.get('name')['errors']['required']">Заповніть поле</span>
     </span>
   </div>
   <div class="form-group">
@@ -64,18 +64,18 @@
         type="checkbox"
         formControlName="agree"
       >
-      <span>Согласен с правилами</span>
+      <span>Згіден з правилами</span>
     </label>
 
   </div>
   <div class="form-group">
-    <button type="submit" class="btn btn-block btn-primary" [disabled] = 'form.invalid'>Зарегистрироваться</button>
+    <button type="submit" class="btn btn-block btn-primary" [disabled] = 'form.invalid'>Зареєструватися</button>
   </div>
   <div class="form-group">
     <p class="text-muted text-xs-center">
-      Уже есть аккаунт?
+      Уже є акаунт?
       <a href="/login">
-        Войти!
+        Ввійти!
       </a>
     </p>
   </div>

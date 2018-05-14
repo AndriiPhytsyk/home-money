@@ -3,7 +3,7 @@
   <div class="title-block">
     <h3 class="title pull-left" >
       <a [routerLink] = "['/system/history']"><i class="fa fa-arrow-left"></i></a>
-      Страница записи № {{event.id}}
+      Сторінка запису  № {{event.id}}
       <span class="sparkline bar"></span>
     </h3>
 
@@ -20,16 +20,16 @@
             <div class="header-block">
               <p class="title">
 
-                <span *ngIf = "event.type === 'income'">Доход</span>
-                <span *ngIf = "event.type === 'outcome'">Расход</span>
+                <span *ngIf = "event.type === 'income'">Дохід</span>
+                <span *ngIf = "event.type === 'outcome'">Розхід</span>
               </p>
             </div>
           </div>
           <div class="card-block">
             <ul>
-              <li>Сумма: <strong>{{event.amount | number: '1.2'}} P</strong></li>
-              <li>Категория: <strong>{{category.name}}</strong></li>
-              <li>Коментарий: <strong>{{event.description}}</strong></li>
+              <li>Сума: <strong>{{event.amount | number: '1.2'}} P</strong></li>
+              <li>Категорія: <strong>{{category.name}}</strong></li>
+              <li>Коментарій: <strong>{{event.description}}</strong></li>
             </ul>
           </div>
           <div class="card-footer">{{event.date}}</div>

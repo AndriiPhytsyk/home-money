@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-header bordered">
     <div class="header-block">
-      <h3 class="title">Добавить событие</h3>
+      <h3 class="title">Добавити подію</h3>
     </div>
   </div>
   <div class="card-block">
@@ -11,7 +11,7 @@
     </div>
     <form #f="ngForm" (ngSubmit) = "onSubmit(f)">
       <div class="form-group">
-        <label class="control-label" for="category">Выберите категорию</label>
+        <label class="control-label" for="category">Выберіть категорію</label>
         <select
           class="form-control"
           id="category"
@@ -23,7 +23,7 @@
         </select>
       </div>
       <div class="form-group">
-        <label class="control-label">Выберите тип</label>
+        <label class="control-label">Выберіть тип</label>
         <div >
           <label *ngFor = "let t of types">
             <input
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="form-group" [ngClass] = "{'has-error': amount.invalid && amount.touched}">
-        <label class="control-label" for="amount">Введите сумму</label>
+        <label class="control-label" for="amount">Введіть суму</label>
         <input
           type="number"
           id="amount"
@@ -53,12 +53,12 @@
           class = "form-help-text"
           *ngIf = "amount.invalid && amount.touched"
         >
-          Поле обезательно к заполнению
+            Поле обов'язково до заповнення
         </span>
       </div>
 
       <div class="form-group" [ngClass] = "{'has-error': description.invalid && description.touched}">
-        <label class="control-label" for="amount">Введите описание</label>
+        <label class="control-label" for="amount">Введіть опис</label>
         <input
           type="text"
           id="description"
@@ -73,7 +73,7 @@
           class = "form-help-text"
           *ngIf = "description.invalid && description.touched"
         >
-          Поле обезательно к заполнению
+          Поле обов'язково до заповнення
         </span>
       </div>
       <button

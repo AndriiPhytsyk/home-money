@@ -1,13 +1,13 @@
 <div class="card">
   <div class="card-header bordered">
     <div class="header-block">
-      <h3 class="title">Добавить категорию</h3>
+      <h3 class="title">Добавити каатегорію</h3>
     </div>
   </div>
   <div class="card-block">
     <form #f="ngForm" (ngSubmit)="onSubmit(f)">
       <div class="form-group " [ngClass] = "{'has-error': name.invalid && name.touched }">
-        <label class="control-label" for="category-name">Введите название</label>
+        <label class="control-label" for="category-name">Введіть назву</label>
         <input
           type="text"
           id="category-name"
@@ -20,10 +20,10 @@
         <span
           class="form-help-text"
           *ngIf="name.invalid && name.touched"
-        >Название категории не может быть пустым</span>
+        >Назва категорії не може бути порожнім.</span>
       </div>
       <div class="form-group" [ngClass] = "{'has-error': name.invalid && name.touched }">
-        <label class="control-label" for="category-value">Введите лимит</label>
+        <label class="control-label" for="category-value">Введіть ліміт</label>
         <input
           type="number"
           id="category-value"
@@ -38,10 +38,10 @@
         <span
           class="form-help-text"
           *ngIf="capacity.invalid && capacity.touched"
-        >Валидация нет ошибки
+        >Валідація нема помилки
         </span>
       </div>
-      <button type="submit" class="btn btn-primary">Добавить</button>
+      <button type="submit" class="btn btn-primary">Добавити</button>
     </form>
   </div>
 </div>

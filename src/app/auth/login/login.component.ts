@@ -29,8 +29,8 @@ export class LoginComponent implements OnInit {
   ) {
     title.setTitle('Вход в систему');
     meta.addTags([
-      {name: 'keywords', content: 'логин, вход, система'},
-      {name: 'description', content: 'Страница для входа в систему'}
+      {name: 'keywords', content: 'логин, вхід, система'},
+      {name: 'description', content: 'Сторінка входа в систему'}
     ]);
   }
 
@@ -41,12 +41,12 @@ export class LoginComponent implements OnInit {
       .subscribe((params: Params) => {
         if (params['nowCanLogin']) {
           this.showMessage({
-            text: 'Теперь вы можете зайти в систему',
+            text: 'Тепер ви можете ввійти в систему',
             type: 'success'
           });
         } else if (params['accessDenied']) {
           this.showMessage({
-            text: 'Для работы с системой вам необходимо войти',
+            text: 'Для работи з системою вам потрібно ввійти',
             type: 'warning'
           });
         }
@@ -79,13 +79,13 @@ export class LoginComponent implements OnInit {
             this.router.navigate(['/system', 'bill']);
           } else {
             this.showMessage({
-              text: 'Пароль не верный',
+              text: 'Неправильний пароль',
               type: 'danger'
             });
           }
         } else {
           this.showMessage({
-            text: 'Такого пользователя не существует',
+            text: 'Такий користувач не існує',
             type: 'danger'
           });
         }

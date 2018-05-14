@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-header bordered">
     <div class="header-block">
-      <h3 class="title">Редактировать категорию</h3>
+      <h3 class="title">Редагувати категорію</h3>
     </div>
   </div>
   <div class="card-block">
@@ -12,7 +12,7 @@
       {{message.text}}</div>
     <form #f="ngForm" (ngSubmit)="onSubmit(f)">
       <div class = "form-group">
-        <label class="control-label" for="e-category">Введите название</label>
+        <label class="control-label" for="e-category">Введіть назву</label>
         <select
           class = "form-control"
           [(ngModel)]="currentCategoryId"
@@ -26,7 +26,7 @@
         </select>
       </div>
       <div class="form-group " [ngClass] = "{'has-error': name.invalid && name.touched }">
-        <label class="control-label" for="e-category-name">Введите название</label>
+        <label class="control-label" for="e-category-name">Введіть назву</label>
         <input
           type="text"
           id="e-category-name"
@@ -39,10 +39,10 @@
         <span
           class="form-help-text"
           *ngIf="name.invalid && name.touched"
-        >Название категории не может быть пустым</span>
+        >Назва категорії не може бути порожньою.</span>
       </div>
       <div class="form-group" [ngClass] = "{'has-error': name.invalid && name.touched }">
-        <label class="control-label" for="e-category-value">Введите лимит</label>
+        <label class="control-label" for="e-category-value">Введіть ліміт</label>
         <input
           type="number"
           id="e-category-value"
@@ -57,10 +57,10 @@
         <span
           class="form-help-text"
           *ngIf="capacity.invalid && capacity.touched"
-        >Валидация нет ошибки
+        >Валідація нема помилки
         </span>
       </div>
-      <button [disabled] = "f.invalid" type="submit" class="btn btn-primary">Редактировать</button>
+      <button [disabled] = "f.invalid" type="submit" class="btn btn-primary">Редагувати</button>
     </form>
   </div>
 </div>

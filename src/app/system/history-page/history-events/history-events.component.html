@@ -23,9 +23,9 @@
                 Параметр
               </button>
               <div class="dropdown-menu" >
-                <a class="dropdown-item" (click)="changeCriteria('amount')">Сумма</a>
+                <a class="dropdown-item" (click)="changeCriteria('amount')">Сума</a>
                 <a class="dropdown-item" (click)="changeCriteria('date')">Дата</a>
-                <a class="dropdown-item" (click)="changeCriteria('category')">Категория</a>
+                <a class="dropdown-item" (click)="changeCriteria('category')">Категорія</a>
                 <a class="dropdown-item" (click)="changeCriteria('type')">Тип</a>
               </div>
             </div>
@@ -36,9 +36,9 @@
             <thead>
             <tr>
               <th>#</th>
-              <th>Сумма</th>
+              <th>Сума</th>
               <th>Дата</th>
-              <th>Категория</th>
+              <th>Категорія</th>
               <th>Тип</th>
               <th class="text-lg-center">Действие</th>
             </tr>
@@ -51,12 +51,12 @@
               <td>{{e.catName}}</td>
               <td>
                 <span [ngClass] = "getEventClass(e)">
-                  <span *ngIf = "e.type === 'income'">Доход</span>
-                  <span *ngIf = "e.type === 'outcome'">Расход</span>
+                  <span *ngIf = "e.type === 'income'">Дохід</span>
+                  <span *ngIf = "e.type === 'outcome'">Витрата</span>
                 </span>
               </td>
               <td class="text-lg-center">
-                <a [routerLink] = "['/system/history' , e.id]" class="btn btn-primary-outline">Открыть</a>
+                <a [routerLink] = "['/system/history' , e.id]" class="btn btn-primary-outline">Відкрити</a>
               </td>
             </tr>
             </tbody>
