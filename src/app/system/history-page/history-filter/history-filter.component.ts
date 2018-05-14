@@ -17,13 +17,13 @@ export class HistoryFilterComponent implements OnInit {
 
   timePeriods = [
     {type: 'd', label: 'День'},
-    {type: 'w', label: 'Неделя'},
-    {type: 'M', label: 'Месец'}
+    {type: 'w', label: 'Тиждень'},
+    {type: 'M', label: 'Місяць'}
     ];
 
   types = [
-    {type: 'income', label: 'Доход'},
-    {type: 'outcome', label: 'Расход'}
+    {type: 'income', label: 'Дохід'},
+    {type: 'outcome', label: 'Витрата'}
   ];
 
   constructor() { }
