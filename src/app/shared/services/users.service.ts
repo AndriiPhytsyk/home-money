@@ -13,7 +13,7 @@ export class UsersService extends BaseApi{
 
   getUserByEmail(email: string): Observable<User> {
     return this.get(`users?email=${email}`)
-      .map((user: User) => user[0] ? user[0] : undefined)
+      .map((user: User) => user[0] ? user[0] : undefined);
   }
 
 

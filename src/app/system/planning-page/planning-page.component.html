@@ -12,7 +12,7 @@
             <h3 class="title">Витрати</h3>
           </div>
           <h5 class="planning-expenses pull-right">
-            Загальний залишок: <span class="text-success">{{bill.value | number: '1.2'}} Р</span>
+            Загальний залишок: <span class="text-success">{{bill.value | number: '1.2'}} Евро</span>
           </h5>
         </div>
         <div class="card-block">
@@ -30,7 +30,7 @@
                 із
                 <span class="text-{{getCatColor(c)}}">{{c.capacity}}</span>
                 |
-                залишилось <span class="text-{{getCatColor(c)}}">{{ c.capacity - categoryCost(c)}}</span> (руб.)
+                залишилось <span class="text-{{getCatColor(c)}}">{{ c.capacity - categoryCost(c)}}</span> (евро)
               </p>
             </div>
           </div>
